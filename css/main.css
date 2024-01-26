@@ -1,6 +1,18 @@
 @import "./reset.css";
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=Poppins:wght@400;500;700&display=swap");
 
+:root {
+  --black: #171718;
+  --black-border: #171718;
+  --whjte: #fff;
+  --purple: #5c62ec;
+
+  --dark-bg: var(--black);
+  --dark-border: var(--black-border);
+  --header-text: var(--whjte);
+  --accent: var(--purple);
+}
+
 html,
 body {
   font-family: "DM Sans", sans-serif;
@@ -14,8 +26,10 @@ body {
 
 /*Nav*/
 .nav {
-  background-color: #171718;
-  color: #fff;
+  padding: 20px 0;
+  border-bottom: 1px solid var(--dark-border);
+  background-color: var(--dark-bg);
+  color: var(--header-text);
 }
 
 .nav-row {
@@ -27,7 +41,7 @@ body {
   flex-wrap: wrap;
 }
 .logo {
-  color: #fff;
+  color: var(--header-text);
   font-size: 24px;
   font-family: "Poppins", sans-serif;
 }
@@ -46,7 +60,7 @@ body {
 }
 
 .nav-list__link {
-  color: #fff;
+  color: var(--header-text);
 }
 
 .nav-list__link--active {
@@ -63,5 +77,5 @@ body {
   display: block;
   height: 2px;
   width: 100%;
-  background-color: #5c62ec;
+  background-color: var(--accent);
 }
