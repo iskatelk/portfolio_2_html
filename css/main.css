@@ -19,6 +19,9 @@ body {
   font-family: "DM Sans", sans-serif;
   letter-spacing: -0.5px;
   color: var(--text-color);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .container {
@@ -275,6 +278,10 @@ body {
   text-align: center;
 }
 
+.content-list a {
+  color: var(--accent);
+}
+
 .content-list__item {
   font-size: 18px;
   line-height: 1.5;
@@ -287,6 +294,7 @@ body {
 /*Footer*/
 
 .footer {
+  margin-top: auto;
   padding: 60px 0 50px;
   background-color: var(--dark-bg);
   color: var(--header-text);
